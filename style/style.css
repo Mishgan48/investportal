@@ -216,29 +216,32 @@ h1 span {
   width: 65%;
 }
 .stat__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   width: 100%;
-  margin-top: 5vh;
 }
 .stat__item {
   width: 17%;
 }
 .stat__item p {
-  padding: 0;
+  justify-content: center;
   margin: 0;
   line-height: 180%;
 }
 .stat__item img {
-  width: 13%;
-  margin-right: 5%;
+  width: 14%;
+  margin-right: 10%;
 }
 .stat__item-text {
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: 300;
 }
 .stat__item-bold {
   font-size: 1.2em;
 }
 .stat__item-yellow {
+  padding-top: 7vh;
   font-size: 2.5em;
   color: #FFCA63;
 }
