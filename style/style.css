@@ -233,7 +233,8 @@ h1 span {
   width: 14%;
   margin-right: 10%;
 }
-.stat__item-text {
+.stat__item-text,
+.fontan__item-text {
   font-size: 0.9em;
   font-weight: 300;
 }
@@ -271,7 +272,7 @@ h1 span {
   justify-content: space-between;
   align-items: flex-end;
   align-content: flex-end;
-  padding-top: 15vh;
+  padding-top: 13vh;
   color: #fff;
 }
 .fontan__item {
@@ -280,6 +281,44 @@ h1 span {
 .fontan__item-subtitle {
   width: 40%;
   letter-spacing: 0.05em;
+}
+.fontan__info {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: 8vh;
+}
+.fontan__info-item {
+  width: 25%;
+}
+#fontan ul {
+  width: 50%;
+  padding: 0;
+  list-style: none;
+}
+#fontan ul li {
+  padding-top: 2vh;
+}
+#fontan ul img {
+  width: 3%;
+  margin-right: 3%;
+}
+.fontan__resident {
+  width: 20%;
+}
+.fontan__resident-text {
+  padding: 1em;
+}
+#fontan button {
+  width: 100%;
+  padding: 0.9em;
+  margin: 1.5em 0 3em 0;
+  color: #000;
+  background-color: #FFE563;
+  border: 0;
+  border-radius: 150px;
+  outline: none;
 }
 
 /* Кластеры */
