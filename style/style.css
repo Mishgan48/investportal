@@ -240,10 +240,13 @@ h1 span {
 .stat__item-bold {
   font-size: 1.2em;
 }
-.stat__item-yellow {
-  padding-top: 7vh;
+.stat__item-yellow,
+.fontan__item-yellow {
   font-size: 2.5em;
   color: #FFCA63;
+}
+.stat__item-yellow {
+  padding-top: 7vh;
 }
 
 /* Фонтанчик */
@@ -253,6 +256,30 @@ h1 span {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+#fontan h2 {
+  width: 40%;
+}
+#fontan p {
+  justify-content: center;
+  margin: 0;
+  line-height: 180%;
+}
+.fontan__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: flex-end;
+  padding-top: 15vh;
+  color: #fff;
+}
+.fontan__item {
+  width: 19%;
+}
+.fontan__item-subtitle {
+  width: 40%;
+  letter-spacing: 0.05em;
 }
 
 /* Кластеры */
