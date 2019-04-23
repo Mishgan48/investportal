@@ -321,6 +321,14 @@ h1 span {
   outline: none;
 }
 
+/* Блок с лицами */
+.face__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 15vh;
+}
+
 /* Кластеры */
 #cluster {
   background-image: url('../img/lip1.png');
