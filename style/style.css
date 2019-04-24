@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
 }
+/* ::-webkit-scrollbar {
+    width: 0px;
+} */
 body {
   width: 100%;
   font-family: 'Gotham Pro';
@@ -38,7 +41,8 @@ h2 {
 #top {
   height: 100vh;
   width: 100%;
-  background-image: url('../img/top_bg.jpg');
+  background-image: url('../img/top_bg.jpg'), url('../img/grid.png');
+  background-blend-mode: darken;
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,6 +80,89 @@ nav {
 .logo__noyellow {
   font-weight: 300;
 }
+.visuallyHidden {
+  /* position: absolute; */
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+.hamburger {
+  display: none;
+  width: 2em;
+  height: 2em;
+  margin-left: 0;
+  margin-right: auto;
+  position: relative;
+}
+
+.hamburger .bar {
+  padding: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+}
+
+.bar1 {
+  top: 2%;
+}
+
+.bar2,
+.bar3 {
+  top: 48%;
+}
+
+.bar3 {
+  right: 0;
+}
+
+.bar4 {
+  bottom: 0;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar1{
+  transform: rotate(45deg);
+  transform-origin: 6%;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+  transform: translateX(-40px);
+  background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+  transform: translateX(40px);
+  background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+  transform-origin: -5%;
+  transform: rotate(-45deg);
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar1{
+  transform: rotate(45deg);
+  transform-origin: 6%;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+  transform: translateX(-40px);
+  background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+  transform: translateX(40px);
+  background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+  transform-origin: -5%;
+  transform: rotate(-45deg);
+}
 nav ul {
   display: flex;
   flex-wrap: nowrap;
@@ -88,12 +175,17 @@ nav ul {
 }
 .find {
   display: flex;
-  justify-content: flex-end;
-  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
   margin: 0 0 0 auto;
 }
+.find img {
+  height: 1.5em;
+  width: 1.5em;
+}
 .find input {
-  width: 60%;
+  width: 70%;
   margin: 0;
   padding: 0.5em;
   border: 0;
@@ -149,7 +241,7 @@ h1 span {
   flex-direction: column;
   width: 20%;
 }
-.header__small p {
+.header__small-text {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -158,14 +250,27 @@ h1 span {
   line-height: 170%;
 }
 .header__small button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 0.9em;
   margin: 1.5em 0 3em 0;
+  font-size: 0.8em;
   color: #000;
   background-color: #FFE563;
   border: 0;
   border-radius: 150px;
   outline: none;
+}
+.header__small img {
+  /* height: 1em; */
+  width: 7%;
+  margin-right: 5%;
+}
+.header__small button p {
+  padding: 0;
+  margin: 0;
 }
 
 /* Артимончик */
@@ -178,6 +283,11 @@ h1 span {
 .artamonov__content {
   display: flex;
   align-items: flex-start;
+  background-image: url('../img/artamonov_bg.png');
+  -webkit-background-size: 80% 80%;
+  background-size: 75% auto;
+  background-position: 70% bottom;
+  background-repeat: no-repeat;
 }
 .artamonov__photo {
   width: 32%;
@@ -204,6 +314,70 @@ h1 span {
 /* Карта */
 #map {
   background-color: #23242D;
+}
+.map__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5vh;
+}
+.map__block {
+  position: relative;
+  width: 55%;
+}
+.map__block p {
+  margin: 0;
+}
+.map__block-top,
+.map__block-bottom {
+  position: absolute;
+  width: 60%;
+  padding-left: 1em;
+  border-left: 5px solid #FEBC11;
+}
+.map__block-top {
+  top: 8vh;
+}
+.map__block-bottom {
+  bottom: 3vh;
+}
+.map__block-yellow {
+  font-size: 1.5em;
+  color: #FFCA63;
+  line-height: 170%;
+}
+.map__block-text {
+  font-size: 1em;
+  color: #fff;
+  line-height: 170%;
+}
+.map__info {
+  width: 35%;
+  padding-top: 5vh;
+  color: #fff;
+}
+.map__info-city {
+  padding-bottom: 2.9vh;
+  font-size: 1.1em;
+}
+.map__info-road {
+  padding-bottom: 0.3vh;
+  font-size: 0.7em;
+}
+.yellow {
+  color: #FFCA63;
+}
+.map__info ul {
+  padding-left: 10%;
+  list-style: none;
+  background-image: url('../img/Arrow.png');
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+  background-position: 5% top;
+  background-repeat: no-repeat;
+}
+.map__info p {
+  margin: 0;
+  font-weight: 300;
 }
 
 /* Типа статистика */
@@ -244,7 +418,7 @@ h1 span {
   font-size: 1.2em;
 }
 .stat__item-yellow,
-.fontan__item-yellow, {
+.fontan__item-yellow {
   font-size: 2.5em;
   color: #FFCA63;
 }
@@ -254,7 +428,8 @@ h1 span {
 
 /* Фонтанчик */
 #fontan {
-  background-image: url('../img/fontan.png');
+  background-image: url('../img/fontan.png'), url('../img/grid.png');
+  background-blend-mode: darken;
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -378,7 +553,7 @@ h1 span {
 #face button {
   width: 22%;
   padding: 0.9em;
-  margin: 7vh 0 0 0;
+  margin: 5vh 0 0 0;
   font-size: 0.9em;
   color: #000;
   background-color: #FFE563;
@@ -389,9 +564,9 @@ h1 span {
 
 /* Кластеры */
 #cluster {
-  padding-top: 15vh;
   color: #fff;
-  background-image: url('../img/lip1.png');
+  background-image: url('../img/lip1.png'), url('../img/grid.png');
+  background-blend-mode: darken;
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -403,6 +578,7 @@ h1 span {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-top: 15vh;
 }
 #cluster h2,
 #video h2 {
@@ -457,7 +633,6 @@ h1 span {
 /* Блок с видео */
 #video {
   position: relative;
-  padding-top: 15vh;
   color: #fff;
   background-color: rgba(0,0,0,0.3);
 }
@@ -487,7 +662,8 @@ h1 span {
 
 /* Нижний блок */
 #bottom {
-  background-image: url('../img/lip2.png');
+  background-image: url('../img/lip2.png'), url('../img/grid.png');
+  background-blend-mode: darken;
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
