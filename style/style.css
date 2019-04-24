@@ -459,7 +459,7 @@ h1 span {
   position: relative;
   padding-top: 15vh;
   color: #fff;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.3);
 }
 .video__item-yellow {
   padding-right: 10%;
@@ -492,4 +492,56 @@ h1 span {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.bottom__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 14vh;
+  color: #fff;
+}
+.bottom__form {
+  width: 43%;
+}
+.bottom__form-text {
+  font-size: 0.9em;
+  line-height: 180%;
+  letter-spacing: 0.1em;
+}
+.bottom__input,
+#bottom textarea {
+  margin: 1.5vh 0;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  border: 0;
+  border-radius: 5px;
+}
+.bottom__input {
+  width: 93%;
+  padding: 2%;
+}
+#bottom textarea {
+  width: 93%;
+  padding: 2%;
+  resize: none;
+}
+.bottom__checkbox {
+  margin: 0;
+}
+.checkbox__text {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.bottom__button {
+  width: 60%;
+  padding: 0.9em;
+  margin: 1em 0 0 0;
+  font-size: 0.9em;
+  color: #000;
+  background-color: #FFE563;
+  border: 0;
+  border-radius: 150px;
+  outline: none;
+}
+.bottom__block {
+  width: 40%;
 }
