@@ -3,9 +3,9 @@ body {
   margin: 0;
   padding: 0;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 0px;
-} */
+}
 body {
   width: 100%;
   font-family: 'Gotham Pro';
@@ -13,6 +13,10 @@ body {
 }
 img {
   max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .content {
   width: 90%;
@@ -41,7 +45,7 @@ h2 {
 #top {
   height: 100vh;
   width: 100%;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.3);
   background-image: /*url('../img/top_bg.jpg'),*/ url('../img/grid.png');
   background-blend-mode: darken;
   /* -webkit-background-size: cover;
@@ -65,7 +69,7 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 20%;
+  width: 18%;
   font-size: 0.9em;
 }
 .logo img {
@@ -86,18 +90,21 @@ nav {
   /* position: absolute; */
   overflow: hidden;
   clip: rect(0 0 0 0);
-  height: 1px; width: 1px;
-  margin: -1px; padding: 0; border: 0;
+  height: 0;
+  width: 0;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 .hamburger {
   display: none;
-  width: 2em;
-  height: 2em;
+  width: 1.7em;
+  height: 1.7em;
+  margin-top: 0.2em;
   margin-left: 0;
   margin-right: auto;
   position: relative;
 }
-
 .hamburger .bar {
   padding: 0;
   width: 100%;
@@ -169,7 +176,7 @@ nav ul {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 80%;
+  width: 77%;
   padding: 0;
   margin: 0;
   font-weight: 300;
@@ -727,4 +734,26 @@ h1 span {
 }
 .bottom__block {
   width: 40%;
+}
+.slick-vertical {
+  margin-top: 6vh;
+}
+.slick-vertical__item {
+  padding: 1.3vh 0;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+.slick-prev,
+.slick-next {
+  -webkit-transform: translate(-50%, 0) rotate(90deg);
+  -ms-transform: translate(-50%, 0) rotate(90deg);
+  transform: translate(-50%, 0) rotate(90deg);
+  left: 45%;
+}
+.slick-prev {
+  top: -5vh;
+}
+.slick-next {
+  top: auto;
+  bottom: -5vh;
 }
