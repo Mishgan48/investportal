@@ -12,55 +12,60 @@
     <link rel="stylesheet" type="text/css" href="style/slick.css" />
     <link rel="stylesheet" type="text/css" href="style/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/onepage-scroll.css" />
 
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/fullpage.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
   </head>
 
   <body>
-    <header id="top">
+    <nav>
+      <div class="logo">
+        <img src="img/top_logo.png" alt="">
+        <div>
+          <p class="logo__yellow">Инвестиционный портал</p>
+          <p class="logo__noyellow">Липецкой области</p>
+        </div>
+      </div>
+      <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+      <label for="checkbox1">
+        <div class="hamburger hamburger1">
+          <span class="bar bar1"></span>
+          <span class="bar bar2"></span>
+          <span class="bar bar3"></span>
+          <span class="bar bar4"></span>
+        </div>
+      </label>
+      <ul class="menu">
+        <li>О регионе</li>
+        <li>Стать инвестором</li>
+        <li>Господдержка</li>
+        <li>Документы</li>
+        <li>Экспорт</li>
+        <li>ГЧП</li>
+        <li>Контакты</li>
+        <li>Весь портал</li>
+        <li>Инвест карта</li>
+      </ul>
+      <div class="find">
+        <a href=""><img class="top__icons" src="img/twi.svg" alt=""></a>
+        <a href=""><img class="top__icons" src="img/insta.png" alt=""></a>
+        <a href=""><img class="top__icons" src="img/fb.svg" alt=""></a>
+        <input class="find__input" type="text">
+      </div>
+    </nav>
+
+    <div id="application-wrapper">
+
+    <header class="lp-section dropdown-part" id="top">
       <div class="video__file">
         <video loop muted autobuffer autoplay poster="img/video_poster.jpg" class="video__file-item"><source src="video/footer_background_1.mp4" type="video/mp4"></video>
       </div>
 
       <div class="content content__header">
-        <nav>
-          <div class="logo">
-            <img src="img/top_logo.png" alt="">
-            <div>
-              <p class="logo__yellow">Инвестиционный портал</p>
-              <p class="logo__noyellow">Липецкой области</p>
-            </div>
-          </div>
-          <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
-          <label for="checkbox1">
-            <div class="hamburger hamburger1">
-              <span class="bar bar1"></span>
-              <span class="bar bar2"></span>
-              <span class="bar bar3"></span>
-              <span class="bar bar4"></span>
-            </div>
-          </label>
-          <ul class="menu">
-            <li>О регионе</li>
-            <li>Стать инвестором</li>
-            <li>Господдержка</li>
-            <li>Документы</li>
-            <li>Экспорт</li>
-            <li>ГЧП</li>
-            <li>Контакты</li>
-            <li>Весь портал</li>
-            <li>Инвест карта</li>
-          </ul>
-          <div class="find">
-            <a href=""><img class="top__icons" src="img/twi.svg" alt=""></a>
-            <a href=""><img class="top__icons" src="img/insta.png" alt=""></a>
-            <a href=""><img class="top__icons" src="img/fb.svg" alt=""></a>
-            <input class="find__input" type="text">
-          </div>
-        </nav>
+
         <div class="header__big">
           <h1><span>ЛИПЕЦКАЯ ОБЛАСТЬ</span> - РЕГИОН ЛИДЕР</h1>
           <p class="header__big-title">В РЕЙТИНГЕ АГЕНСТВА ЭКСПЕРТ РА</p>
@@ -99,7 +104,7 @@
       </div>
     </header>
 
-    <section id="artamonov">
+    <section class="lp-section dropdown-part" id="artamonov">
       <div class="artamonov__content">
         <div class="artamonov__photo">
           <img src="img/artamonov.png" alt="">
@@ -107,12 +112,12 @@
         <div class="artamonov__text">
           <h2>ОБРАЩЕНИЕ ГУБЕРНАТОРА ЛИПЕЦКОЙ ОБЛАСТИ АРТАМОНОВА ИГОРЯ</h2>
           <p class="artamonov__text-subtitle">ОБРАЩЕНИЕ К ИНВЕСТОРАМ</p>
-          <p class="artamonov__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation davayte bablishko disigneram laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <p class="artamonov__text-item">Липецкая область – один из лидеров Российской Федерации по показателям инвестиционной привлекательности. У каждого региона есть свои «точки роста». В Липецкой области это человеческий потенциал, честные и профессиональные люди, благодаря которым развивается регион. Мы рассчитываем на их активное участие в развитии области. Я благодарен всем предпринимателям-налогоплательщикам региона. Увеличение доходов бюджета – это ресурс для развития здравоохранения, образования, культуры и социальной сферы, ЖКХ, для строительства дорог, реализации программ благоустройства городов и сел нашей области. Нам есть что предложить инвестору: наличие готовой производственной инфраструктуры – особые экономические зоны, в том числе лучшая инвестиционная площадка Европы – ОЭЗ «Липецк», индустриальные парки, система налоговых льгот и преференций, субсидирование процентных ставок по кредитам, государственные гарантии, опыт взаимодействия с инвесторами и понимание их интересов, наличие квалифицированных рабочих и управленческих кадров, развитая банковская инфраструктура; развитая инфраструктура современных технологий. Это подтверждает и независимое рейтинговое агентство RAExpert, в рейтинге которого Липецкая область находится в тройке лидеров среди всех регионов Российской Федерации, показывая минимальный инвестиционный риск на протяжении почти десяти лет. Президент России определил 9 национальных целей развития страны до 2024 года. C их учетом на уровне региона мы формируем новую стратегию развития Липецкой области. Чтобы быть успешными нам всем придется меняться. Мы начинаем изменения с себя! С запуска изменений в системе государственного и муниципального управления региона, с приобретения новых компетенций, внедрения Lean-технологий в работу органов власти. Повышение производительности труда – ключевой приоритет социально-экономического развития России и Липецкой области. Это главный аргумент конкурентоспособности региона. Мы будем поддерживать инвестиционные проекты модернизации традиционных отраслей промышленности и развития новых видов экономической деятельности, предприятия с самыми современными технологиями, создадим в регионе IT- кластер. Мы перестраиваем систему подготовки кадров, в том числе и рабочих специальностей. Будут улучшены материальная база учебных заведений в особенности техникумов и колледжей, качество первичной медицинской помощи, образования, доступ к социальным услугам. Считаю необходимым вовлечь бизнес на условиях концессии и социального партнерства к реализации программ создания комфортной среды и благоустройства. В результате грамотно организованной работы в муниципальных образованиях с участием частных инвесторов появятся новые парки, скверы, объекты спорта, дополнительного образования и досуга. Многое становится возможным благодаря экономическому росту, который обеспечивает наш бизнес. И наша задача – создать для него максимально комфортные условия. В то же время бизнес должен нести социальную ответственность перед обществом, а мы, в свою очередь, сделаем все возможное для улучшения делового климата. Сегодня мы с уверенностью смотрим в будущее. Это не лозунг, это подтвержденный факт. «За последние десятилетия мы достигли таких перемен, на которые другим странам понадобились столетия», - говорит наш Президент. Нам необходимо быть на шаг впереди. Во всем. И в завершение считаю необходимым вернуться к Посланию Президента РФ Владимира Владимировича Путина: «Для всех, кто хочет работать, проявить себя, готов честно служить Отечеству и народу, добиться успеха, Россия всегда будет страной возможностей. В этом залог нашего успешного развития, уверенного движения вперёд!</p>
         </div>
       </div>
     </section>
 
-    <section id="map">
+    <section class="lp-section dropdown-part" id="map">
       <div class="content map__content">
         <div class="map__block">
           <img src="img/map.png" alt="">
@@ -173,7 +178,7 @@
       </div>
     </section>
 
-    <section id="stat">
+    <section class="lp-section dropdown-part" id="stat">
       <div class="content stat__content">
         <h2>ЛИПЕЦКАЯ ОБЛАСТЬ - ЭФФЕКТИВНЫЙ РЕГИОН!</h2>
         <div class="stat__item">
@@ -221,7 +226,7 @@
       </div>
     </section>
 
-    <section id="fontan">
+    <section class="lp-section dropdown-part" id="fontan">
       <div class="content fontan__content">
         <h2>Липецкая область — Подготовленный регион!</h2>
         <div class="fontan__item">
@@ -277,7 +282,7 @@
       </div>
     </section>
 
-    <section id="face">
+    <section class="lp-section dropdown-part" id="face">
       <div class="content face__content">
         <h2>ЛИПЕЦКАЯ ОБЛАСТЬ - УСПЕШНЫЙ РЕГИОН!</h2>
         <div class="face__item">
@@ -314,7 +319,7 @@
       </div>
     </section>
 
-    <section id="cluster">
+    <section class="lp-section dropdown-part" id="cluster">
       <div class="content cluster__content">
         <h2>ЛИПЕЦКАЯ ОБЛАСТЬ -<br>РЕГИОН ПЕРСПЕКТИВ</h2>
         <div class="cluster__item">
@@ -346,7 +351,7 @@
 
     </section>
 
-    <section id="video">
+    <section class="lp-section dropdown-part" id="video">
       <div class="content video__content">
         <h2>ЛИПЕЦКАЯ ОБЛАСТЬ -<br>ОТКРЫТЫЙ РЕГИОН</h2>
         <div class="video__item">
@@ -364,7 +369,7 @@
       </div> -->
     </section>
 
-    <section id="bottom">
+    <section class="lp-section dropdown-part" id="bottom">
       <div class="content bottom__content">
         <form class="bottom__form" action="">
           <p class="bottom__form-text">ПРЕДОСТАВЬТЕ НАМ КРАТКУЮ ИНФОРМАЦИЮ О СЕБЕ<br>И СВОЁМ ПРОЕКТЕ И МЫ ОПЕРАТИВНО СВЯЖЕМСЯ С ВАМИ:</p>
@@ -398,6 +403,8 @@
         </div>
       </div>
     </section>
+
+    </div>
 
   </body>
 </html>

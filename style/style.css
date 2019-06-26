@@ -34,6 +34,9 @@ h2 {
 }
 
 /* Верхушка */
+header {
+  background-image: /*url('../img/top_bg.jpg'),*/ url('../img/grid.png');
+}
 .content__header {
   display: flex;
   flex-wrap: wrap;
@@ -45,8 +48,8 @@ h2 {
 #top {
   height: 100vh;
   width: 100%;
-  background-color: rgba(0,0,0,0.3);
-  background-image: /*url('../img/top_bg.jpg'),*/ url('../img/grid.png');
+  /*background-color: rgba(0,0,0,0.3);
+  background-image: /*url('../img/top_bg.jpg'),*/ url('../img/grid.png'); */
   background-blend-mode: darken;
   /* -webkit-background-size: cover;
   background-size: cover;
@@ -62,7 +65,7 @@ nav {
   align-items: flex-start;
   width: 90%;
   top: 0;
-  padding: 1em 0;
+  padding: 1em 5%;
   z-index: 9999;
 }
 .logo {
@@ -84,6 +87,7 @@ nav {
   color: #FFE563;
 }
 .logo__noyellow {
+  color: #fff;
   font-weight: 300;
 }
 .visuallyHidden {
@@ -97,13 +101,13 @@ nav {
   border: 0;
 }
 .hamburger {
-  display: none;
   width: 1.7em;
   height: 1.7em;
   margin-top: 0.2em;
   margin-left: 0;
   margin-right: auto;
   position: relative;
+  transform: scale(0,0);
 }
 .hamburger .bar {
   padding: 0;
@@ -182,12 +186,23 @@ nav ul {
   font-weight: 300;
   list-style: none;
 }
+.menu {
+  color: #fff;
+  -o-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
 .find {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 35%;
   margin: 0 0 0 auto;
+  -o-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 .find img {
   height: 1.5em;
@@ -291,7 +306,7 @@ h1 span {
 }
 .artamonov__content {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   background-image: url('../img/artamonov_bg.png');
   -webkit-background-size: 80% 80%;
   background-size: 75% auto;
@@ -305,19 +320,18 @@ h1 span {
 .artamonov__text {
   width: 60%;
 }
-.artamonov__text p {
+.artamonov__text-subtitle {
+  padding: 0.2em 0;
+  margin: 1vh 0;
+  font-size: 1.3em;
+  font-weight: bold;
   letter-spacing: 0.05em;
   line-height: 180%;
 }
-.artamonov__text-subtitle {
-  padding: 0.5em 0;
-  font-size: 1.3em;
-  font-weight: bold;
-}
 .artamonov__text-item {
-  padding: 0;
+  padding: 0 0 3vh 0;
   margin: 0;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 /* Карта */
