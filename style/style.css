@@ -329,9 +329,11 @@ h1 span {
   line-height: 180%;
 }
 .artamonov__text-item {
-  padding: 0 0 3vh 0;
+  padding: 0 0 30vh 0;
   margin: 0;
-  font-size: 0.9em;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  line-height: 180%;
 }
 
 /* Карта */
@@ -770,4 +772,7 @@ h1 span {
 .slick-next {
   top: auto;
   bottom: -5vh;
+}
+@media screen and (max-width: 768px) {
+  
 }
