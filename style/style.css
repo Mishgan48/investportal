@@ -453,7 +453,7 @@ h1 span {
 
 /* Фонтанчик */
 #fontan {
-  background-image: url('../img/fontan.png'), url('../img/grid.png');
+  background-image: url('../img/fontan.jpg'), url('../img/grid.png');
   background-blend-mode: darken;
   -webkit-background-size: cover;
   background-size: cover;
@@ -590,7 +590,7 @@ h1 span {
 /* Кластеры */
 #cluster {
   color: #fff;
-  background-image: url('../img/lip1.png'), url('../img/grid.png');
+  background-image: url('../img/lip1.jpg'), url('../img/grid.png');
   background-blend-mode: darken;
   -webkit-background-size: cover;
   background-size: cover;
@@ -692,7 +692,7 @@ h1 span {
 
 /* Нижний блок */
 #bottom {
-  background-image: url('../img/lip2.png'), url('../img/grid.png');
+  background-image: url('../img/lip2.jpg'), url('../img/grid.png');
   background-blend-mode: darken;
   -webkit-background-size: cover;
   background-size: cover;
@@ -774,5 +774,5 @@ h1 span {
   bottom: -5vh;
 }
 @media screen and (max-width: 768px) {
-  
+
 }
